@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=wmeyes
+Name=WmEyes
 Comment=Xeyes in the Dock
 Comment[pl]=Xeyes w Doku
 Exec=wmeyes -w
