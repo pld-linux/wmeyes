@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=wmeyes
+Comment=Xeyes in the Dock
+Comment[pl]=Xeyes w Doku
+Exec=wmeyes -w
+Terminal=0
+Type=Application
