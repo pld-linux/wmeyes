@@ -6,4 +6,6 @@ Comment[pl]=Xeyes w Doku
 Exec=wmeyes -w
 Terminal=false
 Type=Application
+Categories=Applet;
+NotShowIn=GNOME;KDE;
 # vi: encoding=utf-8
