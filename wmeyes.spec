@@ -2,7 +2,7 @@ Summary:	wmeyes - Xeyes for WindowMaker Dock
 Summary(pl):	wmeyes - Xeyes dla Doku WIndowMakera
 Name:		wmeyes
 Version: 	1.0
-Release:	2
+Release:	3
 Copyright:	GPL
 Group:		X11/Window Managers/Tools
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
@@ -36,6 +36,8 @@ install -d $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
 
 make install DESTDIR=$RPM_BUILD_ROOT 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
+
+strip $RPM_BUILD_ROOT%{_bindir}/*
 
 gzip -9nf README
 
