@@ -26,10 +26,9 @@ wmeyes to program oparty na Xeyes, napisany z przeznaczeniem dla Doku
 WindowMakera. Para oczu ¶ledzi ruchy kursora myszy.
 
 %description -l pt_BR
-O wmeyes é uma implementação do xeyes clássico
-do X Window System, para o WindowMaker. Agora
-você nunca mais perderá o seu ponteiro do mouse
-de novo.
+O wmeyes é uma implementação do xeyes clássico do X Window System,
+para o WindowMaker. Agora você nunca mais perderá o seu ponteiro do
+mouse de novo.
 
 %description -l es
 xeyes para WindowMaker
@@ -47,7 +46,7 @@ xmkmf -a
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT 
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README
