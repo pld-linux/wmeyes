@@ -9,8 +9,8 @@ Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 URL:		http://home.istar.ca/~jenora/wmeyes.html
 Source0:	%{name}.tgz
 Source1:	wmeyes.desktop
-BuildPrereq:	XFree86-devel
-BuildPrereq:	xpm-devel
+BuildRequires:	XFree86-devel
+BuildRequires:	xpm-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix	/usr/X11R6
