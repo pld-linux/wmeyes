@@ -3,16 +3,15 @@ Summary(pl):	wmeyes - Xeyes dla Doku WindowMakera
 Summary(pt_BR):	xeyes para o WindowMaker
 Summary(es):	xeyes para WindowMaker
 Name:		wmeyes
-Version:	1.0
-Release:	5
-License:	GPL
+Version:	1.2
+Release:	1
+License:	MIT
 Group:		X11/Window Managers/Tools
-Source0:	http://home.istar.ca/~jenora/%{name}.tgz
-# Source0-md5:	611509fd1ced9fc90abaa6487ea307eb
+Source0:	http://www.bstern.org/wmeyes/%{name}-%{version}.tar.gz
+# Source0-md5:	bb687b5fea83d49b35552a181083142b
 Source1:	%{name}.desktop
-Patch0:		%{name}-sigalarm.patch
-Patch1:		%{name}-ComplexProgramTargetNoMan.patch
-URL:		http://home.istar.ca/~jenora/wmeyes.html
+Patch0:		%{name}-ComplexProgramTargetNoMan.patch
+URL:		http://www.bstern.org/wmeyes/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,9 +33,8 @@ mouse de novo.
 xeyes para WindowMaker
 
 %prep
-%setup -q -c -n %{name}
+%setup -q 
 %patch0 -p1
-%patch1 -p1
 
 %build
 xmkmf -a
@@ -55,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc ChangeLog README
 %attr(755,root,root) %{_bindir}/%{name}
 %{_desktopdir}/docklets/wmeyes.desktop
