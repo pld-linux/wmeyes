@@ -1,26 +1,27 @@
 Summary:	wmeyes - Xeyes for WindowMaker Dock
-Summary(pl):	wmeyes - Xeyes dla Doku WIndowMakera
+Summary(pl):	wmeyes - Xeyes dla Doku WindowMakera
 Name:		wmeyes
-Version: 	1.0
+Version:	1.0
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
+Source0:	http://home.istar.ca/~jenora/%{name}.tgz
+Source1:	%{name}.desktop
 URL:		http://home.istar.ca/~jenora/wmeyes.html
-Source0:	%{name}.tgz
-Source1:	wmeyes.desktop
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
 
 %description
-wmeyes is the Xeyes for WindowMaker. It sits in the dock, 
-and a pair of eyes track your cursor.
+wmeyes is the Xeyes for WindowMaker. It sits in the dock, and a pair
+of eyes track your cursor.
 
 %description -l pl
-wmeyes to program oparty na Xeyes, napisany z przeznaczeniem
-dla Doku WindowMakera. Para oczu ¶ledzi ruchy kursora myszy.
+wmeyes to program oparty na Xeyes, napisany z przeznaczeniem dla Doku
+WindowMakera. Para oczu ¶ledzi ruchy kursora myszy.
 
 %prep
 %setup -q -c -n %{name}
