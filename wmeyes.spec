@@ -11,10 +11,9 @@ Source0:	%{name}.tgz
 Source1:	wmeyes.desktop
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 wmeyes is the Xeyes for WindowMaker. It sits in the dock, 
