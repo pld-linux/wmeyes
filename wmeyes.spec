@@ -28,7 +28,7 @@ dla Doku WindowMakera. Para oczu ¶ledzi ruchy kursora myszy.
 
 %build
 xmkmf
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
