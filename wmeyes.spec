@@ -32,10 +32,10 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
+install -d $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
 
 make install DESTDIR=$RPM_BUILD_ROOT 
-install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
 
 strip $RPM_BUILD_ROOT%{_bindir}/*
 
@@ -49,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
-/etc/X11/applnk/DockApplets/wmeyes.desktop
+/usr/X11R6/share/applnk/DockApplets/wmeyes.desktop
