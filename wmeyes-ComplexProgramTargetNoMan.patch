@@ -1,0 +1,8 @@
+--- wmeyes/Imakefile~	Mon Nov 26 05:52:06 2001
++++ wmeyes/Imakefile	Mon Nov 26 05:52:06 2001
+@@ -7,4 +7,4 @@
+ SRCS = wmeyes.c
+ OBJS = wmeyes.o
+ 
+-ComplexProgramTarget(wmeyes)
++ComplexProgramTargetNoMan(wmeyes)
