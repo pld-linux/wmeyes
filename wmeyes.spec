@@ -36,8 +36,6 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 %{__make} install DESTDIR=$RPM_BUILD_ROOT 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-strip $RPM_BUILD_ROOT%{_bindir}/*
-
 gzip -9nf README
 
 %clean
