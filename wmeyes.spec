@@ -10,7 +10,6 @@ URL:		http://home.istar.ca/~jenora/wmeyes.html
 Source0:	%{name}.tgz
 Source1:	wmeyes.desktop
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
