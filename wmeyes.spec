@@ -12,6 +12,7 @@ Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://home.istar.ca/~jenora/%{name}.tgz
 Source1:	%{name}.desktop
 Patch0:		%{name}-sigalarm.patch
+Patch1:		%{name}-ComplexProgramTargetNoMan.patch
 URL:		http://home.istar.ca/~jenora/wmeyes.html
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,9 +39,10 @@ xeyes para WindowMaker
 %prep
 %setup -q -c -n %{name}
 %patch0 -p1
+%patch1 -p1
 
 %build
-xmkmf
+xmkmf -a
 %{__make}
 
 %install
