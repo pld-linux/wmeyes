@@ -4,7 +4,7 @@ Summary(pt_BR):	xeyes para o WindowMaker
 Summary(es):	xeyes para WindowMaker
 Name:		wmeyes
 Version:	1.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://home.istar.ca/~jenora/%{name}.tgz
