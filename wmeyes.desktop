@@ -5,3 +5,4 @@ Comment[pl]=Xeyes w Doku
 Exec=wmeyes -w
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
