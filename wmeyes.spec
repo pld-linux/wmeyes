@@ -48,8 +48,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 
 /etc/X11/applnk/DockApplets/wmeyes.desktop
-
-%changelog
-* Mon May 24 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [1.0-1]
-- initial RPM release.
