@@ -4,7 +4,7 @@ Summary(pt_BR):	xeyes para o WindowMaker
 Summary(es):	xeyes para WindowMaker
 Name:		wmeyes
 Version:	1.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://home.istar.ca/~jenora/%{name}.tgz
@@ -44,13 +44,11 @@ xmkmf -a
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets \
+install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets \
 	$RPM_BUILD_ROOT%{_bindir}
 
 install %{name} $RPM_BUILD_ROOT%{_bindir}
-
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
-
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,5 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/%{name}
-
-#%%{_applnkdir}/DockApplets/wmeyes.desktop
+%{_desktopdir}/docklets/wmeyes.desktop
