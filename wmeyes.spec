@@ -57,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %attr(755,root,root) %{_bindir}/%{name}
 
-#%{_applnkdir}/DockApplets/wmeyes.desktop
+#%%{_applnkdir}/DockApplets/wmeyes.desktop
