@@ -15,7 +15,6 @@ URL:		http://home.istar.ca/~jenora/wmeyes.html
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 
 %description
 wmeyes is the Xeyes for WindowMaker. It sits in the dock, and a pair
