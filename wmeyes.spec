@@ -1,7 +1,7 @@
 Summary:	wmeyes - Xeyes for WindowMaker Dock
-Summary(pl.UTF-8):   wmeyes - Xeyes dla Doku WindowMakera
-Summary(pt_BR.UTF-8):   xeyes para o WindowMaker
-Summary(es.UTF-8):   xeyes para WindowMaker
+Summary(pl.UTF-8):	wmeyes - Xeyes dla Doku WindowMakera
+Summary(pt_BR.UTF-8):	xeyes para o WindowMaker
+Summary(es.UTF-8):	xeyes para WindowMaker
 Name:		wmeyes
 Version:	1.2
 Release:	1
