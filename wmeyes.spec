@@ -1,10 +1,10 @@
 Summary:	wmeyes - Xeyes for WindowMaker Dock
+Summary(es.UTF-8):	xeyes para WindowMaker
 Summary(pl.UTF-8):	wmeyes - Xeyes dla Doku WindowMakera
 Summary(pt_BR.UTF-8):	xeyes para o WindowMaker
-Summary(es.UTF-8):	xeyes para WindowMaker
 Name:		wmeyes
 Version:	1.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Window Managers/Tools
 Source0:	http://www.bstern.org/wmeyes/%{name}-%{version}.tar.gz
@@ -12,7 +12,8 @@ Source0:	http://www.bstern.org/wmeyes/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-ComplexProgramTargetNoMan.patch
 URL:		http://www.bstern.org/wmeyes/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libXmu-devel
+BuildRequires:	xorg-lib-libXpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
@@ -33,7 +34,7 @@ mouse de novo.
 xeyes para WindowMaker
 
 %prep
-%setup -q 
+%setup -q
 %patch0 -p1
 
 %build
